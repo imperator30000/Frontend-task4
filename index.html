@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Resume</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="Content">
+    <header id="banner">
+        <img class="logo" width="40" height="40" alt="logo image with dot and slash">
+        <nav aria-label="Main navigation">
+            <a href="#about-me" aria-label="Go to About me section">About me</a>
+            <a href="#education" aria-label="Go to Education section">Education</a>
+            <a href="#experience" aria-label="Go to Work Experience section">Work Experience</a>
+            <a href="#skill" aria-label="Go to Skills section">Skills</a>
+            <a href="#skill" aria-label="Go to Contacts section">Contacts</a>
+        </nav>
+    </header>
+    <section id="about-me">
+        <p class="hello">Hello!<br>My name is Vadim Tiulenev<br>I'm back-end developer</p>
+        <img src="img/me.jpg" class="Image" height="400" width="1140" alt="Photo of Vadim Tiulenev"/>
+    </section>
+    <section id="education">
+        <p class="header">Education</p>
+        <section class="education">
+            <section class="education-block">
+                <div class="title">
+                    <p class="place">ITMO university</p>
+                    <p class="description">Bachelor's degree - Computer Science</p>
+                </div>
+                <p class="data">2022 - present</p>
+            </section>
+            <section class="education-block">
+                <div class="title">
+                    <p class="place">Saint-Petersburg lyceum №393</p>
+                    <p class="description">Master's degree - Mathematics, Physics and IT</p>
+                </div>
+                <p class="data">2020 - 2022</p>
+            </section>
+
+            <section class="education-block">
+                <div class="title">
+                    <p class="place">Volgograd lyceum №4</p>
+                    <p class="description">Master's degree - Mathematics and Physics</p>
+                </div>
+                <p class="data">2011 - 2020</p>
+            </section>
+        </section>
+    </section>
+    <section id="experience">
+        <p class="header">Work Experience</p>
+        <nav>
+            <div class="yandex">Yandex</div>
+            <div class="bookmate">Bookmate</div>
+            <div class="yandex-plus">Yandex Plus</div>
+        </nav>
+        <section class="experience">
+            <section class="experience-description">
+                <div class="title">
+                    <p class="place">Back-end Developer Bookmate</p>
+                    <p class="description">Saint-Petersburg, Russia</p>
+                </div>
+                <p class="data">March 2024 - July 2024 · Part-time</p>
+                <p class="description-first">I've been doing backend development on kotlin and ruby.
+                    I was involved in the development of a virtual storyteller.
+                    I was doing a backend for the summer draw in bookmate
+                </p>
+                <div class="title">
+                    <p class="place">Back-end Developer Yandex-plus</p>
+                    <p class="description">Saint-Petersburg, Russia</p>
+                </div>
+                <p class="data">July 2024 - Present · Full-time</p>
+                <p class="description-first">I am developing Yandex plus in different countries.
+                    Among the latest achievements of the team: launch of the Forte card co-brand, launched cashback in Uzbekistan
+                </p>
+            </section>
+            <img src="img/images-3.png" width="554" height="400" alt="Yandex logo">
+        </section>
+    </section>
+    <section id="skill">
+        <p class="header">Skills</p>
+        <section class="skill-bars">
+            <section class="skill-bars-left">
+                <section class="Java" aria-label="Java skill is 100%">
+                    <p>Java</p>
+                    <div class="bar">
+                        <div class="value"></div>
+                    </div>
+                </section>
+                <section class="Kotlin" aria-label="Kotlin skill is 70%">
+                    <p>Kotlin</p>
+                    <div class="bar">
+                        <div class="value"></div>
+                    </div>
+                </section>
+                <section class="htmlCss" aria-label="HTML + CSS skill is 70%">
+                    <p>HTML + CSS</p>
+                    <div class="bar">
+                        <div class="value"></div>
+                    </div>
+                </section>
+                <section class="Javascript" aria-label="Javascript skill is 70%">
+                    <p>Javascript</p>
+                    <div class="bar">
+                        <div class="value"></div>
+                    </div>
+                </section>
+                <section class="Python" aria-label="Python skill is 80%">
+                    <p>Python</p>
+                    <div class="bar">
+                        <div class="value"></div>
+                    </div>
+                </section>
+            </section>
+            <section class="skill-bars-right" aria-label="SoftSkill skill is 90%">
+                <section class="SoftSkill">
+                    <p>Soft skill</p>
+                    <div class="bar">
+                        <div class="value"></div>
+                    </div>
+                </section>
+                <section class="Ruby" aria-label="Ruby skill is 60%">
+                    <p>Ruby</p>
+                    <div class="bar">
+                        <div class="value"></div>
+                    </div>
+                </section>
+                <section class="Spring" aria-label="Spring skill is 100%">
+                    <p>Spring</p>
+                    <div class="bar">
+                        <div class="value"></div>
+                    </div>
+                </section>
+                <section class="Koin" aria-label="Koin skill is 60%">
+                    <p>Koin</p>
+                    <div class="bar">
+                        <div class="value"></div>
+                    </div>
+                </section>
+                <section class="Ktor" aria-label="Ktor skill is 60%">
+                    <p>Ktor</p>
+                    <div class="bar">
+                        <div class="value"></div>
+                    </div>
+                </section>
+            </section>
+        </section>
+        <section class="add-new-skill">
+            <p class="header">Add new skill</p>
+            <section class="add-new-skill-input-and-button">
+                <section class="SkillName">
+                    <p>Skill name</p>
+                    <input alt="Skill name" aria-label="Skill name">
+                </section>
+                <section class="SkillProficiencyPercentage">
+                    <p>Skill proficiency percentage, %</p>
+                    <input alt="Skill percent" aria-label="Skill percent">
+                </section>
+                <button class="button">Add</button>
+            </section>
+
+        </section>
+    </section>
+    <section id="soft-skills">
+        <p class="header">Soft Skills</p>
+        <section class="skill-bars">
+            <section class="extravert-introvert" aria-label="extravert skill is 58%">
+                <p class="title"><span class="percentage">58%</span> Extravert</p>
+                <div class="bar">
+                    <div class="value"></div>
+                </div>
+                <p class="min-value">Extravert</p>
+                <p class="max-value">Introvert</p>
+            </section>
+            <section class="intuitive-observant" aria-label="observant skill is 57%">
+                <p class="title"><span class="percentage">57%</span> Observant</p>
+                <div class="bar">
+                    <div class="value"></div>
+                </div>
+                <p class="min-value">Intuitive</p>
+                <p class="max-value">Observant</p>
+            </section>
+            <section class="thinking-feeling" aria-label="thinking skill is 69%">
+                <p class="title"><span class="percentage">69%</span> Thinking</p>
+                <div class="bar">
+                    <div class="value"></div>
+                </div>
+                <p class="min-value">Thinking</p>
+                <p class="max-value">Feeling</p>
+            </section>
+            <section class="judging-prospecting" aria-label="judging skill is 72%">
+                <p class="title"><span class="percentage">72%</span> Judging</p>
+                <div class="bar">
+                    <div class="value"></div>
+                </div>
+                <p class="min-value">Judging</p>
+                <p class="max-value">Prospecting</p>
+            </section>
+            <section class="assertive-turbulent" aria-label="assertive skill is 76%">
+                <p class="title"><span class="percentage">76%</span> Assertive</p>
+                <div class="bar">
+                    <div class="value"></div>
+                </div>
+                <p class="min-value">Assertive</p>
+                <p class="max-value">Turbulent</p>
+            </section>
+        </section>
+    </section>
+    <section id="contacts">
+        <p class="header">Contacts</p>
+        <section class="contacts">
+            <div class="contact-box">
+                <img class="geo" height="40" width="40" alt="geo-image">
+                <div class="text">
+                    <p class="contact-type">Address</p>
+                    <p class="contact-data">89 Ctachek str., Saint-Petersburg </p>
+                </div>
+            </div>
+            <div class="contact-box">
+                <img class="phone" height="40" width="40" alt="phone-image">
+                <div class="text">
+                    <p class="contact-type">Phone</p>
+                    <p class="contact-data">+7 (961) 678 33 24</p>
+                </div>
+            </div>
+            <div class="contact-box">
+                <img class="mail" height="40" width="40" alt="mail-image">
+                <div class="text">
+                    <p class="contact-type">E-Mail</p>
+                    <p class="contact-data">vadim095311@yandex.ru</p>
+                </div>
+            </div>
+        </section>
+    </section>
+    <footer id="social">
+        <section>
+            <a href="https://www.instagram.com/"><img class="instagram" width="24" height="24" alt="instagram"></a>
+            <a href="https://github.com/imperator30000"><img class="github" width="24" height="24" alt="github"> </a>
+            <a href="https://twitter.com/"> <img class="twitter" width="24" height="24" alt="twitter"></a>
+            <a href="https://ru.linkedin.com"><img class="linkedin" width="24" height="24" alt="linkedin"></a>
+        </section>
+        <p>© 2023</p>
+    </footer>
+</div>
+</body>
+</html>
